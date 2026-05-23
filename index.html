@@ -16,14 +16,20 @@
 
 
 
- <header>
+ <header id="headerDC">
    <div class="header-inner">
      <div class="logo-wrap">
        <img src="https://f.playcode.io/p-2728853/v-1/019e4fb8-d956-770f-ad36-081aab85c88a/44b2d86a-d816-440a-ac00-8a1bc24370a4.jpeg" alt="Logo DauCash" class="logo" />
-       <span class="brand-name">DauCash</span>
+       <span id="DauCash" class="brand-name">DauCash</span>
      </div>
-     <span class="header-tag">Outil gratuit</span>
-   </div>
+     <div style="display: flex; align-items: center; gap: 15px;">
+        <span class="header-tag">Outil gratuit</span>
+        <button id="theme-toggle" style="background: none; border: none; font-size: 20px; cursor: pointer; padding: 5px; border-radius: 50%; transition: background 0.3s;" aria-label="Changer de thème">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
  </header>
 
 
@@ -215,13 +221,10 @@
  </section>
 
 
-
-
  <footer>
-   <p>© 2025 DauCash · Outil pédagogique, pas un conseil en investissement.</p>
+   <p>© 2025 DauCash · Outil pédagogique, pas un conseil en investissement. 
+   </p>
  </footer>
-
-
 
 
  <script src="script.js"></script>
